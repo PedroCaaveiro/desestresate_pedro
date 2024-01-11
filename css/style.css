@@ -8,12 +8,276 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "sonnambula";
+  src: url("../font/LaSonnambula-ffp.woff2") format("woff2"), url("../font/LaSonnambula-ffp.woff") format("woff");
 }
 
 /* ******************************** */
 
 /* Colores */
 
+:root {
+  /* Mode 1 */
+  /* colors */
+  --blue: #6db8d0;
+  --green: #1ac149e5;
+  --white: #f5f8f9;
+}
+
 /* ******************************** */
+
+
+/*********PAGINA INDEX**********/
+#container_index {
+  width: 100%;
+  height: 58.25rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+
+}
+
+/***********HEADER******/
+.header_index {
+  width: 100%;
+  height: 25.0625rem;
+  background: url(../img/smartphone/foto_playa.webp);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+
+
+}
+
+/**********LOGO DENTRO DEL HEADER*******/
+.logo_index {
+  width: 12.3125rem;
+  height: 13.875rem;
+  background-image: url(../img/smartphone/LOGO.png);
+
+}
+
+/****** MAIN DEL INDEX********/
+.main_index {
+  width: 100%;
+  height: 8.8438rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/******TEXTO DENTRO DEL MAIN******/
+.texto_main_index {
+  font-size: 1rem;
+  margin-left: .625rem;
+  font-family: "sonnambula";
+  font-weight: 700;
+}
+
+/************ FOOTER DEL INDEX******/
+.footer_index {
+  width: 100%;
+  height: 25.0625rem;
+  background-image: url(../img/smartphone/foto_arena.webp);
+  background-size: cover;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+
+
+}
+
+/***** MENU ICONOS DENTRO DEL FOOTER*********/
+.menu_index_footer {
+  width: 100%;
+  height: 5.875rem;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+/********* ICONO INICIO INDEX*******/
+.inicio_index {
+  display: inline-block;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-image: url(../img/smartphone/Yin\ Yang.png);
+}
+
+/********* ICONO REDIRECCIONA A MEDITACION******/
+.meditacion_index {
+  display: inline-block;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-image: url(../img/smartphone/Floating\ Guru.png);
+}
+
+/********** ICONO REDIRECCIONA MUSICA*******/
+.musica_index {
+  display: inline-block;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-image: url(../img/smartphone/Music\ Notation.png);
+}
+
+/**************** PAGINA  MELODIAS*************/
+
+/********* CONTAINER PAGINA MELODIAS********/
+#container_meditacion {
+  width: 100%;
+  height: 58.25rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/smartphone/Cumbre-biodiversidad.webp);
+}
+
+/******* HEADER CON TEXTO /CRONOMETRO/GUIA PAGINA MEDITACION*******/
+.header_meditacion {
+  width: 100%;
+  height: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/********* MAIN  CON CIRCULOS MEDITACION********/
+.main_meditacion {
+  width: 100%;
+  height: 21.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/******* CIRCULO 1 DENTRO MAIN***********/
+.animacion_circulo_uno_meditacion {
+
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****** CIRCULO 2 DENTRO DEL CIRCULO 1********/
+.animacion_circulo_dos_meditacion {
+  width: 50%;
+  height: 50%;
+  background-color: beige;
+  border-radius: 100%;
+}
+
+/****** CAJA CON BOTON DENTRO PARA INICIAR MEDITACION*****/
+.inicio_meditacion {
+  width: 100%;
+  height: 6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*********** BOTON INICIO MEDITACION**********/
+.boton_inicio_meditacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  background-color: var(--blue);
+  border-radius: 50px 0 50px 0;
+}
+
+/****** CAJA CON FOOTER MEDITACION DENTRO******/
+.footer_meditacion {
+  width: 100%;
+  height: 182px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+  
+
+/*********** PAGINA MELODIAS**********/
+
+.container_melodias{
+width:100%;
+height: 58.25rem;
+background-color: var(--green);
+display: flex;
+flex-direction: column;
+}
+/******* HEADER PAGINA MELODIAS*********/
+
+.header_melodias{
+width: 100%;
+height:19.875rem;
+background-color: var(--white);
+background-image: url(../img/smartphone/foto_agua.webp);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding-top: 30px;
+}
+/****** CONTENEDOR CON 2 BOTONES MELODIAS DENTRO DE HEADER*******/
+.botones_melodias_header{
+  width: 100%;
+  height:150px;
+  background-color: rgb(23, 20, 20);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+/********* BOTON PARA MELODIAS ESTANDAR LADO IZQUIERDO*******/
+.boton__melodias_izquierda{
+  width:100px;
+  height: 80px;
+  background-color: var(--green);
+  border-radius: 3.125rem 0;
+  opacity: 0.8;
+}
+/******* BOTON PARA MELODIAS ESTANDAR BOTON DERECHO ********/
+.boton__melodias_derecha{
+  width:100px;
+  height: 80px;
+  background-color: var(--green);
+  border-radius:0 3.125rem;
+  opacity: 0.8;
+}
+/*************** MAIN PAGINA MELODIAS*********/
+.zen_melodias {
+  width: 100%;
+  height: 292px;
+  background-color: rgb(5, 84, 118);
+  background-image: url(../img/smartphone/foto_zen.webp);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

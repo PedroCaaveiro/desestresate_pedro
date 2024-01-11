@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- SEO = Básico -->
+  <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+  <meta property="og:title" content="Título de tu página" />
+  <meta property="og:description" content="Descripción de tu página" />
+  <meta property="og:image" content="URL de la imagen que quieres mostrar en las redes sociales" />
+  <meta property="og:url" content="URL de tu página" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Título de tu página" />
+  <meta name="twitter:description" content="Descripción de tu página" />
+  <meta name="twitter:image" content="URL de la imagen que quieres mostrar en Twitter" />
+
+  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- icono de acceso para IOS -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Se cambia el tema de algunos navegadores -->
+  <meta name="theme-color" content="#fafafa" />
+  <!-- Código de las plataformas de Análisis -->
+  <script></script>
+  <!-- Scripts a cargar antes de la renderización -->
+  <script src="preloader.js"></script>
+</head>
+
+<body>
+  <div id="container_meditacion">
+    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
+    <!-- Header (encabezado de la página, zona superior) -->
+    <header class="header_meditacion">
+      <h1 class="h1_meditacion">MEDITACIÓN</h1>
+      <h3 class="h3_tiempo_meditacion">TIEMPO</h3>
+      <H3 class="cronometro_tiempo_meditacion" id="cronometro">00:00:00</H3>
+      <h3 class="guia_header_meditacion" id="guia"></h3>
+
+
+    </header>
+    <!-- Main (centro de la página, zona central) -->
+    <main class="main_meditacion">
+      <section class="animacion_circulo_uno_meditacion">
+        <section class="animacion_circulo_dos_meditacion"></section>
+      </section>
+     
+    </main>
+    <main class="inicio_meditacion">
+    <section class="boton_inicio_meditacion">EMPEZAR</section>
+  </main>
+    <!-- Footer (final de la página, zona inferior) -->
+    <footer class="footer_meditacion">
+      <nav class="menu_index_footer">
+        <a href="index.html"alt="inicio" class="inicio_index"></a>
+        <a href="meditacion.html"alt="meditacion" class="meditacion_index"></a>
+        <a href="melodias.html" alt="musica" class="musica_index"></a>
+        
+      </nav>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>
