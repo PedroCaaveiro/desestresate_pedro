@@ -246,23 +246,39 @@ padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100px;
+  width:110px;
   height: 80px;
   background-color: var(--green);
   border-radius: 3.125rem 0;
   opacity: 0.8;
 }
+/*********** ANIMACION BOTON IZQUIERDO*******/
+
+.boton__melodias_izquierda:hover{
+background-color:var(--blue);
+}
+
+
 /******* BOTON PARA MELODIAS ESTANDAR BOTON DERECHO ********/
-.boton__melodias_derecha{
+.boton__melodias_derecha {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100px;
+  width: 110px;
   height: 80px;
   background-color: var(--green);
-  border-radius:0 3.125rem;
+  border-radius: 0 3.125rem;
   opacity: 0.8;
+  transition: background-color 0.3s ease, transform 2s linear; /* Añadido para mejorar la transición */
 }
+
+.rotando {
+  background-color: var(--blue);
+  transform: rotate(360deg);
+}
+
+
+
 /******* BOX MAIN MELODIAS********/
 .main_melodias{
   width: 100%;

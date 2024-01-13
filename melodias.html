@@ -47,21 +47,40 @@
     <header class="header_melodias">
       <h1>MELODIAS</h1>
       <section class="botones_melodias_header">
-        <nav class="boton__melodias_izquierda">KALIMBA</nav>
-        <nav class="boton__melodias_derecha">AGUA</nav>
+        <button class="boton__melodias_izquierda" onclick="musica_kalimba()">KALIMBA</button>
 
+        <audio id="musica_kalimba">
+          <source src="./music/kalimba.mp3" type="audio/mp3">
+        </audio>
+        
+        <button class="boton__melodias_derecha" onclick="musica_agua()">AGUA</button>
+        <audio id="musica_agua">
+          <source src="./music/agua.mp3" type="audio/mp3">
+        </audio>
       </section>
    </header>
   <main class="main_melodias">
     <section class="zen_main_melodias">
-      <nav class="boton__melodias_izquierda">LOFI</nav>
-      <nav class="boton__melodias_derecha">HOGAR</nav>
-
+      <button class="boton__melodias_izquierda" onclick="musica_lofi()">LOFI</button>
+      <audio  id="musica_lofi">
+        <source src="./music/lofi.mp3" type="audio/mp3">
+      </audio>
+      <button class="boton__melodias_derecha" onclick="musica_hogar()">HOGAR</button>
+      <audio  id="musica_hogar">
+        <source src="./music/hogar.mp3" type="audio/mp3">
+      </audio>
     </section>
     <section class="zen_main_melodias">
-      <nav class="boton__melodias_izquierda">NATURALEZA</nav>
-      <nav class="boton__melodias_derecha">VIAJES</nav>
+      <button class="boton__melodias_izquierda" onclick="musica_naturaleza()">NATURALEZA</button>
+      <audio id="musica_naturaleza">
+        <source src="./music/naturaleza.mp3" type="audio/mp3">
 
+      </audio>
+      <button class="boton__melodias_derecha" onclick="musica_viajes()">VIAJES</button>
+      <audio id="musica_viajes">
+
+        <source src="./music/viajes.mp3" type="audio/mp3">
+      </audio>
     </section>
     
   
@@ -69,8 +88,16 @@
   <footer class="buda_main_melodias">
 
 <nav class="footer_buda_melodias">
-  <nav class="boton__melodias_izquierda">GONS TIBET</nav>
-      <nav class="boton__melodias_derecha">SUEÑO</nav>
+  <button class="boton__melodias_izquierda" onclick="musica_tibet()">GON TIBETANO</button>
+  <audio id="musica_tibet">
+<source src="./music/tibet-96242.mp3" type="audio/mp3">
+
+  </audio>
+      <button class="boton__melodias_derecha" onclick="musica_dream()" >SUEÑO</button>
+      <audio id="musica_dream">
+        <source src="./music/sueño.mp3" type="audio/mp3">
+
+      </audio>
 </nav>
 <nav class="footer_buda_melodias">
   <a href="index.html"alt="inicio" class="inicio_index"></a>
@@ -91,7 +118,6 @@
 
 
   </div>
-
 </body>
 
 </html>
