@@ -160,24 +160,48 @@
 }
 
 /******* CIRCULO 1 DENTRO MAIN***********/
+/* Estilo del Primer Círculo */
 .animacion_circulo_uno_meditacion {
-
-  width: 80%;
-  height: 80%;
+  width: 50%;
+  height: 50%;
   background-color: black;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-/****** CIRCULO 2 DENTRO DEL CIRCULO 1********/
-.animacion_circulo_dos_meditacion {
-  width: 50%;
-  height: 50%;
-  background-color: beige;
+.animacion_circulo_uno_meditacion::after {
+  content: "";
+  width: 40%;
+  height: 40%;
+  
   border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: expandCircle 3s infinite alternate; /* Aplica la animación */
+  animation-play-state: paused; /* Inicia pausada */
 }
+
+@keyframes expandCircle {
+  0% {
+    transform: translate(-50%, -50%) scale(1); /* Escala normal al inicio */
+    background-color: tomato;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2); /* Escala al 120% al final */
+    background-color: var(--green);
+  }
+}
+
+.mostrar-animacion::after {
+  animation-play-state: running; /* Inicia la animación cuando tiene esta clase */
+}
+
+
 
 /****** CAJA CON BOTON DENTRO PARA INICIAR MEDITACION*****/
 .inicio_meditacion {
@@ -198,7 +222,14 @@
   height: 50px;
   background-color: var(--blue);
   border-radius: 50px 0 50px 0;
+  transition: background-color 0.3s ease, transform 2s linear; /* Añadido para mejorar la transición */
 }
+.boton_inicio_meditacion:hover{
+  background-color:var(--green);
+  transform: rotate(360deg);
+
+}
+
 
 /****** CAJA CON FOOTER MEDITACION DENTRO******/
 .footer_meditacion {
@@ -251,11 +282,15 @@ padding-top: 30px;
   background-color: var(--green);
   border-radius: 3.125rem 0;
   opacity: 0.8;
+  transition: background-color 0.3s ease, transform 2s linear; /* Añadido para mejorar la transición */
+
+
 }
 /*********** ANIMACION BOTON IZQUIERDO*******/
 
 .boton__melodias_izquierda:hover{
 background-color:var(--blue);
+transform: rotate(360deg);
 }
 
 
@@ -276,7 +311,10 @@ background-color:var(--blue);
   background-color: var(--blue);
   transform: rotate(360deg);
 }
-
+.boton__melodias_derecha:hover{
+  background-color:var(--blue);
+  transform: rotate(360deg);
+  }
 
 
 /******* BOX MAIN MELODIAS********/
