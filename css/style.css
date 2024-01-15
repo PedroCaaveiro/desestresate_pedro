@@ -8,8 +8,8 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "sonnambula";
-  src: url("../font/LaSonnambula-ffp.woff2") format("woff2"), url("../font/LaSonnambula-ffp.woff") format("woff");
+  font-family: "lato";
+  src: url("../font/LatoThin.woff2") format("woff2"), url("../font/LatoThin.woff") format("woff");
 }
 
 /* ******************************** */
@@ -73,7 +73,7 @@
 .texto_main_index {
   font-size: 1rem;
   margin-left: .625rem;
-  font-family: "sonnambula";
+  font-family: "lato";
   font-weight: 700;
 }
 
@@ -182,23 +182,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: expandCircle 3s infinite alternate; /* Aplica la animación */
-  animation-play-state: paused; /* Inicia pausada */
+  animation: expandCircle 3s infinite alternate; 
+  animation-play-state: paused; 
 }
 
 @keyframes expandCircle {
   0% {
-    transform: translate(-50%, -50%) scale(1); /* Escala normal al inicio */
+    transform: translate(-50%, -50%) scale(1); 
     background-color: tomato;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.2); /* Escala al 120% al final */
+    transform: translate(-50%, -50%) scale(1.2); 
     background-color: var(--green);
   }
 }
 
 .mostrar-animacion::after {
-  animation-play-state: running; /* Inicia la animación cuando tiene esta clase */
+  animation-play-state: running; 
 }
 
 
@@ -226,7 +226,8 @@
 }
 .boton_inicio_meditacion:hover{
   background-color:var(--green);
-  transform: rotate(360deg);
+  scale: 1.2;
+  box-shadow: 0 0 15px black;
 
 }
 
@@ -281,16 +282,17 @@ padding-top: 30px;
   height: 80px;
   background-color: var(--green);
   border-radius: 3.125rem 0;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: background-color 0.3s ease, transform 2s linear; /* Añadido para mejorar la transición */
+font-family: "lato";
 
 
 }
 /*********** ANIMACION BOTON IZQUIERDO*******/
 
 .boton__melodias_izquierda:hover{
-background-color:var(--blue);
-transform: rotate(360deg);
+  scale: 1.2;
+  box-shadow: 0 0 15px black;
 }
 
 
@@ -304,16 +306,18 @@ transform: rotate(360deg);
   background-color: var(--green);
   border-radius: 0 3.125rem;
   opacity: 0.8;
+  font-family: "lato";
+  
   transition: background-color 0.3s ease, transform 2s linear; /* Añadido para mejorar la transición */
 }
-
-.rotando {
-  background-color: var(--blue);
-  transform: rotate(360deg);
+h1 {
+  font-family:"lato";
 }
+h3{font-family: "lato";}
+
 .boton__melodias_derecha:hover{
-  background-color:var(--blue);
-  transform: rotate(360deg);
+  box-shadow: 0 0 15px black;
+  scale: 1.2;
   }
 
 
