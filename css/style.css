@@ -160,7 +160,7 @@
 }
 
 /******* CIRCULO 1 DENTRO MAIN***********/
-/* Estilo del Primer Círculo */
+
 .animacion_circulo_uno_meditacion {
   width: 50%;
   height: 50%;
@@ -176,7 +176,6 @@
   content: "";
   width: 40%;
   height: 40%;
-  
   border-radius: 100%;
   position: absolute;
   top: 50%;
@@ -185,6 +184,7 @@
   animation: expandCircle 3s infinite alternate; 
   animation-play-state: paused; 
 }
+  
 
 @keyframes expandCircle {
   0% {
@@ -222,7 +222,7 @@
   height: 50px;
   background-color: var(--blue);
   border-radius: 50px 0 50px 0;
-  transition: background-color 0.3s ease, transform 2s linear; /* Añadido para mejorar la transición */
+  transition: background-color 0.3s ease, transform 2s linear; 
 }
 .boton_inicio_meditacion:hover{
   background-color:var(--green);
@@ -280,6 +280,7 @@ padding-top: 30px;
   align-items: center;
   width:110px;
   height: 80px;
+  padding: 10px;
   background-color: var(--green);
   border-radius: 3.125rem 0;
   opacity: 0.9;
@@ -307,7 +308,7 @@ font-family: "lato";
   border-radius: 0 3.125rem;
   opacity: 0.8;
   font-family: "lato";
-  
+  padding: 10px;
   transition: background-color 0.3s ease, transform 2s linear; /* Añadido para mejorar la transición */
 }
 h1 {
