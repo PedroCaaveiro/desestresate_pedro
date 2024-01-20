@@ -14,7 +14,7 @@ function reproducirMelodia(idMelodia) {
     let botonActual = document.querySelector(
       `#${reproduciendo}`
     ).previousElementSibling;
-    botonActual.classList.remove("rotando");
+   
     botonActual.style.backgroundColor = "var(--green)";
   }
 
@@ -23,15 +23,14 @@ function reproducirMelodia(idMelodia) {
     melodia.currentTime = 0;
     reproduciendo = null;
 
-    boton.classList.remove("rotando");
-    boton.style.backgroundColor = "var(--green)";
+   
   } else {
     melodia.play();
     reproduciendo = idMelodia;
-
-    boton.classList.add("rotando");
     boton.style.backgroundColor = "var(--blue)";
+
   }
+ 
 }
 
 // RESTO DE FUNCIONES PARA SONAR MELODIA
@@ -122,7 +121,10 @@ function mostrarGuia() {
 
 function reiniciarMeditacion() {
   clearInterval(intervalo);
-  tiempoRestante = 300; // Reiniciar el tiempo a 5 minutos
-  document.getElementById('cronometro').textContent = '00:05:00'; // Restablecer el texto del cronómetro
-  document.getElementById('guia').textContent = ''; // Limpiar el contenido en el elemento guía
+  //REINICIAR A 5 MINUTOS 
+  tiempoRestante = 300; 
+  // REESTABLECE EEL TEXTO 
+  document.getElementById('cronometro').textContent = '00:05:00'; 
+   // LIMPIA EL CONTENIDO AL FINAL DE LOS 5 MINUTOS 
+  document.getElementById('guia').textContent = '';
 }
